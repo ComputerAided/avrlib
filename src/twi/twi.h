@@ -4,6 +4,7 @@
 
 void twiStart();
 void twiSend();
+void twiEnd();
 
 
 #endif
