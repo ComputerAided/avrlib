@@ -1,6 +1,6 @@
 
-#ifndef ComputerAided_twi_h
-#define ComputerAided_twi_h
+#ifndef ComputerAidedTWI_h
+#define ComputerAidedTWI_h
 
 void twiEnable(void); //Enables TWI on the AVR
 
