@@ -2,25 +2,28 @@
 #ifndef ComputerAided_twi_h
 #define ComputerAided_twi_h
 
-void twiEnable();
+void twiEnable(void); //Enables TWI on the AVR
 
 
-void twiStart();
+void twiDisable(void); // Disables TWI on the AVR
 
 
-void twiStop();
+void twiStart(void); // Sends Start Condition
 
 
-void twiSend();
+void twiStop(void); // Sends Stop Condition
 
 
-uint8_t readACK();
+void twiSend(uint8_t data); // Loads Data, Sends it
 
 
-uint8_t readNoAck();
+uint8_t readACK(void); // Reads in from Slave, sends ACK when done
 
 
-void waitForTWIComplete();
+uint8_t readNoAck(void); // Reads in from slave, sends NOACK when Done
+
+
+void waitForTWIComplete(void); // Waits until complete
 
 
 #endif
