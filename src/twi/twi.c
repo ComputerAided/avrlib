@@ -10,7 +10,7 @@ TWI (I2C) Library for the ATMega328
 Distributed as-is; NO WARRANTY IS GIVEN
 ********************************************************/
 
-#include <ComputerAidedTWI.h>
+#include "ComputerAidedTWI.h"
 
 
 void twiEnable(void) { //Enables TWI on the AVR
